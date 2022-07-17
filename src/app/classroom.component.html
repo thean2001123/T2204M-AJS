@@ -1,0 +1,23 @@
+<h1>Nguyen The An {{className}}</h1>
+<button type="button" (click)="changeName()">Change name</button>
+<app-student *ngFor="let sv of studentArray"
+  [data]="sv">
+</app-student>
+<h2>Trang thai hoat dong cua lop:
+  <span *ngIf="classStatus">Hoat dong</span>
+  <span *ngIf="!classStatus">Vo hieu</span>
+</h2>
+<button type="button" (click)="changeStatus()">Chuyen trang thai</button>
+<h2>Danh sach giao vien:</h2>
+<ol>
+  <li *ngFor="let t of teacherNames; let i=index;">
+    {{teacherNames[i]}}
+  </li>
+
+</ol>
+<h2>Danh sach mon hoc:</h2>
+<ol>
+  <li *ngFor="let p of subjectName; ">
+    {{p}}
+  </li>
+</ol>
