@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="city" placeholder="City Name" (keydown)="enter($event)">
+<button (click)="search()">Tim kiem</button>
+
+
+
+<child-fcwt class="col-3" *ngFor="let i of array" [data]="i"></child-fcwt>
+
