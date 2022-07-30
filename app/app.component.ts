@@ -7,6 +7,8 @@ import {ISClassname} from "./interfaces/classroom.interfaces";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  favoritesList=['Inbox','Sent Items']
+  JohnList=['Inbox','Drafts','Deleted Items','Sent Items','OutBox']
   title = 'ajs';
   CLassroom:ISClassname[]=[
     {
@@ -31,3 +33,4 @@ export class AppComponent {
     }
   ]
 }
+
